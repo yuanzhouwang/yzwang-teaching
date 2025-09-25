@@ -18,7 +18,7 @@ YAML means "Yet Another Markup Language". You can use this section to customize 
 
 You can also add formatting under \texttt{output}:
 \texttt{mainfont}: Set the main font.
-\texttt{ontsize}: 11pt: Adjust the base font size.
+\texttt{fontsize}: 11pt: Adjust the base font size.
 \texttt{header-includes}: Include custom LaTeX packages or commands (e.g. for advanced header/footer customization).
 
 ## The setup chunk
@@ -48,7 +48,7 @@ Defaults for the above are all \texttt{TRUE}.
 
 \textbf{Activity:} Make a cat by customizing chunk options.
 
-```{r message=FALSE, warning=FALSE, collapse=TRUE, results='hide'}
+```{r message=TRUE, warning=FALSE, collapse=TRUE, results='hide'}
 cat("  /\\_/\\  (\n ( ^.^ ) _)")
 message("   \\\"/  (\n ( | | )")
 warning("   /  (\n | )")

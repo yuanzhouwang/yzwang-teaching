@@ -1,0 +1,16 @@
+---
+title: "Lab 1 Demo"
+author: "Andrew Yuanzhou Wang"
+date: "2025-09-25"
+output: pdf_document
+abstract: "this is my abstract"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+```
+
