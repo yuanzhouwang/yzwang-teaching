@@ -33,6 +33,8 @@ You can load libraries in the setup or elsewhere, but it's generally best to loa
 - Install packages with \texttt{install.packages("packagename")}. These usually only need to be installed once until R gets an update and you have to reinstall all of them again.
 - Load libraries with \texttt{library(libraryname)}. You must install the package containing the library before you can do this.
 
+It is vital that you set your directory correctly. All data should be saved to this directory or the same directory as your script or markdown file. To do so, you can use `setwd([directorylocation])`in this chunk.
+
 ## Code Chunks
 
 You can embed code like below. You can customize a few options in the header:
@@ -63,3 +65,20 @@ To add math notation, embed Latex math with "\texttt{$...$}". Some math environm
 
 You can change font options for some specific words to \texttt{monospace}, \textbf{bold}, **different bold**, or *italic*.
 
+## Trying it out
+
+Let's make sure that we have everything set up correctly. Please download the file [here](https://github.com/yuanzhouwang/yzwang-teaching) and put it in the correct directory.
+
+Now let's make a plot. To do so, we need to learn two things.
+
+- `variablename <- value` will assign `value` to `variablename`
+- `read.csv(filename.csv)` will return the contents of `filename.csv` as a dataframe.
+- `plot(x,y)` will create a scatterplot.
+
+Don't worry about what a dataframe is yet.
+
+```{r}
+df <- read.csv("uscrowdsynth.csv")
+plot(df$income, df$monthtotal)
+```
+Now click "Knit" to turn it into a PDF. It should work.
