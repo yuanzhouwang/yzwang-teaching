@@ -1,0 +1,73 @@
+---
+title: "Lab 2 Pt2"
+output: html_document
+---
+
+> Let's apply some of the syntax we've learned this week to some problems.
+> This should be similar to Problem Set 1, but be warned that the data is different.
+
+---
+
+Your problem set is based on resources produced by Elena Llaudet and Kosuke Imai. It draws on the data and research in the following publication:
+
+Raghabendra Chattopadhyay and Esther Duflo. 2004. “Women as Policy Makers: Evidence from a
+Randomized Policy Experiment in India." Econometrica, 72 (5): 1409–43.)
+
+Today our data will be completely made up. The scenario is as follows:
+
+I hypothesize that the ingestion of spiders while asleep **causes** individuals' propensity to buy blind boxes to increase. To tes this, I survey some number of individuals in my neighborhood, collecting data on:
+
+1) `adult`: whether they are an adult. `=1` if yes and `=0` if no.
+2) `spiders`: how many spiders they ingested in their sleep the previous week.
+3) `blindbox`: how many blindboxes they bought this week.
+
+---
+
+# Getting Started
+
+Read the CSV file ["lab2data.csv"](https://github.com/yuanzhouwang/yzwang-teaching/blob/main/lab2data.csv) into an object called `df`. Read the first few observations of the dataset.
+
+```{r}
+# df <- read.csv("lab2data.csv")
+# head("lab2data.csv")
+```
+
+
+-   What does each observation in this dataset represent?
+-   Please substantively interpret the first observation in the dataset.
+-   What is the **type** of each variable in the dataset?
+
+---
+
+# Exploratory Data Analaysis
+
+Please provide your code for the following statistics:
+
+-   How many observations are in the dataset?
+-   What percent of survey respondents were adults?
+-   On average, how many spiders did respondents ingest the previous week?
+
+```{r}
+# dim(df)[1]
+# nrow(df) # This also works
+# mean(df$adult)
+# mean(df$spiders)
+```
+
+
+---
+
+# Methodology
+We want to estimate the *average causal effect* of ingesting spiders on buying blind boxes.
+
+1) What would be the treatment variable?
+2) What would be the outcome variable?
+3) What would be the treatment group?
+4) What would be the control group?
+
+We also wanted to estimate the average causal effect of being an adult on the propensity to buy blind boxes:
+
+1) What would be the treatment variable?
+2) What would be the outcome variable?
+3) What would be the treatment group?
+4) What would be the control group?
